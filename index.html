@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-dars</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-dark text-center mt-3 mb-3">Movies catalog</h1>
+    <div class="row">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <input type="text" name="text" class="form-control mb-3" placeholder="ave" aria-label="text" required>
+          <input type="text" name="namber" class="form-control mb-3" placeholder="5" aria-label="text" required>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected disabled>All</option>
+            <option value="1">One</option>
+            <option value="1">Two</option>
+            <option value="1">Three</option>
+          </select>
+          <input class="form-control mb-3" list="datalistOptions" id="exampleDataList" placeholder="Rating (high to low)">
+          <datalist id="datalistOptions">
+            <option value="high to low">
+              <option value="low to high">
+              </datalist>
+              <button type="submit" class="btn btn-primary col-12">Search</button>
+            </form>
+            <h2 class="text-dark mt-3 mb-1">Bookmarked movies</h2>
+            <ul class="list-group">
+              <li class="list-group-item d-flex flex-column">Avengers:Infinity war
+                <button type="button" class="btn text-center btn-danger col-3">Remove</button>
+              </li>
+              <li class="list-group-item d-flex flex-column">The Avengers
+                <button type="button" class="btn text-center btn-danger col-3">Remove</button>
+              </li>
+              <li class="list-group-item d-flex flex-column">12 Years a Slave 
+                <button type="button" class="btn text-center btn-danger col-3">Remove</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <h3>Search result:39</h3>
+            <div class="alert alert-secondary" role="alert">
+              Use the form on the left to search for a movie
+            </div>
+            <div class="row mb-4">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./images/polezni-pitures1.jpg" class="card-img-top" alt="cat">
+                  <div class="card-body">
+                    <strong class="card-title">Avengers:Infinity war</strong>
+                    <div class="d-flex align-items-center mb-2">
+                      <img src="./images/calendar.png" width="16" height="16" alt="star icon">
+                      <p class="card-text ms-2">2018</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./images/star.png" width="16" height="16" alt="star icon">
+                      <p class="card-text ms-2">8.7</p>
+                    </div>
+                    <button class="btn btn-outline-primary">Watch trailer</button>
+                    <button class="btn btn-outline-primary">More info</button>
+                    <button class="btn btn-outline-primary">Book mark</button>                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./images/polezni-pitures3.jpg" class="card-img-top" alt="cat">
+                  <div class="card-body">
+                    <strong class="card-title">The Avengers</strong>
+                    <div class="d-flex align-items-center mb-2">
+                      <img src="./images/calendar.png" width="16" height="16" alt="star icon">
+                      <p class="card-text ms-2">2012</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="./images/star.png" width="16" height="16" alt="star icon">
+                      <p class="card-text ms-2">8.1</p>
+                    </div>
+                    <button class="btn btn-outline-primary">Watch trailer</button>
+                    <button class="btn btn-outline-primary">More info</button>
+                    <button class="btn btn-outline-primary">Book mark</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination pagination-sm justify-content-center">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
