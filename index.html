@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2-dars</title>
+  <title>4-dars</title>
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -16,13 +16,13 @@
         <form action="https://echo.htmlacademy.ru/" method="POST">
           <input type="text" name="text" class="form-control mb-3" placeholder="ave" aria-label="text" required>
           <input type="text" name="namber" class="form-control mb-3" placeholder="5" aria-label="text" required>
-          <select class="form-select mb-3" aria-label="Default select example">
+          <select class="form-select mb-3" name="number selected" aria-label="Default select example">
             <option selected disabled>All</option>
-            <option value="1">One</option>
-            <option value="1">Two</option>
-            <option value="1">Three</option>
+            <option value="one">One</option>
+            <option value="Two">Two</option>
+            <option value="Three">Three</option>
           </select>
-          <input class="form-control mb-3" list="datalistOptions" id="exampleDataList" placeholder="Rating (high to low)">
+          <input class="form-control mb-3" name="Rating" list="datalistOptions" id="exampleDataList" placeholder="Rating (high to low)">
           <datalist id="datalistOptions">
             <option value="high to low">
               <option value="low to high">
@@ -50,7 +50,33 @@
             <div class="row mb-4">
               <div class="col-6">
                 <div class="card">
-                  <img src="./images/polezni-pitures1.jpg" class="card-img-top" alt="cat">
+                  <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/infinity-war.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/maxresdefault.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                   <div class="card-body">
                     <strong class="card-title">Avengers:Infinity war</strong>
                     <div class="d-flex align-items-center mb-2">
@@ -62,14 +88,62 @@
                       <p class="card-text ms-2">8.7</p>
                     </div>
                     <button class="btn btn-outline-primary">Watch trailer</button>
-                    <button class="btn btn-outline-primary">More info</button>
-                    <button class="btn btn-outline-primary">Book mark</button>                  
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      More info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Qasoskorlar (inglizcha: The Avengers) — 2012-yilda Joss Whedon tomonidan ishlangan hamda Marvel Comicsdan tushirilgan Qasoskorlar jamoasiga asoslangan Amerika superqahramon filmi. Film premyerasi AQShda 4-may, 2012-yilda boʻlib oʻtdi. Filmning daromadi dunyo boʻyicha alohida oʻrin egallab turibdi. Qasoskorlar filmi distributor Walt Disney Studios va Motion Pictures tomonidan suratga olingan oltinchi filmdir. Undan avvalgi beshta film 2008-yildan 2011-yilgacha suratga olingan edi. Filmning syujetida bosh personajlarni Marvelning Temir odam, Kapitan Amerika, Thor, Hulk, Qora beva va Lochin koʻzlar yoritib bergan. Syujetda yovuz personajni qudratli Thorning oʻgay ukasi xudo Loki yoritib bergan. U butun dunyoni boʻysintirmiqchi edi. Ammo ularga qarshi Qasoskorlar jamoasi kurashadi.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-success">Book mark</button>                  
                   </div>
                 </div>
               </div>
               <div class="col-6">
-                <div class="card">
-                  <img src="./images/polezni-pitures3.jpg" class="card-img-top" alt="cat">
+                <div class="card">                  
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/avengers.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/infinity-war.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/maxresdefault.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/avengers-6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                   <div class="card-body">
                     <strong class="card-title">The Avengers</strong>
                     <div class="d-flex align-items-center mb-2">
@@ -81,8 +155,29 @@
                       <p class="card-text ms-2">8.1</p>
                     </div>
                     <button class="btn btn-outline-primary">Watch trailer</button>
-                    <button class="btn btn-outline-primary">More info</button>
-                    <button class="btn btn-outline-primary">Book mark</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      More info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Filmni rejissor va ssenariychi Zak Penn suratga olmoqchi boʻladi va ssenariy yozadi. Marvel Studios kinokompaniyasi tomonidan suratga olingan bu film daromadi $1,6 milliard dollar miqdorida mablagʻ toʻplashga muvofiq boʻldi va eng kassabop filmlar roʻyxatida alohida oʻrin egalladi. AQShda 2012-yili Golivudning mashhur teatrlaridan biri El Kapitan teatrida film premyerasi boʻlib oʻtdi. Film 2D, 3D hamda IMAX 3D formatlarda suratga olingan. Film syomkasi 2011-yilda suratga olina boshlagan. Syomka Ogayo shtati, Nyu Meksika va Nyu York shahrida boʻlib oʻtdi. Film sikvellari 2015-yildagi Qasoskorlar: Altron erasi, 2018-yildagi Qasoskorlar: Abadiyat jangi filmlaridir.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-success">Book mark</button>
                   </div>
                 </div>
               </div>
@@ -97,9 +192,14 @@
               <li class="page-item">
                 <a class="page-link" href="#">3</a>
               </li>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li> 
             </ul>
           </div>
         </div>
       </div>
+      
+      <script src="./css/bootstrap.min.js"></script>
     </body>
     </html>
